@@ -1,4 +1,3 @@
-var numSquares = 6; 
 var colors = [];
 var pickedColor; 
 var squares = document.querySelectorAll(".square");
@@ -9,10 +8,11 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
 
+var numSquares = 6; 
+
 init();
 
 function init() {
-	
 	setupModeButtons();	
 	setupSquares();
 	reset();
@@ -63,8 +63,8 @@ function reset() {
 			squares[i].style.display = "none"; 	 
 		}
 	}
-	h1.style.background = "steelblue";
-	messageDisplay.style.color = "steelblue";	
+	h1.style.background = "#4682b4";
+	messageDisplay.style.color = "#4682b4";	
 }
 
 resetButton.addEventListener("click", function() {

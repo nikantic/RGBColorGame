@@ -22,14 +22,14 @@ body {
 }
 
 h1 {
-	color:white;
+	color: #fff;
 	color-height: 1.1;
 	font-weight: 300;
 	text-align: center;
-	background: steelblue;
+	background: #4682b4;
 	margin: 0;
 	text-transform: uppercase;
-	padding: 20px 0;
+	padding: 15px 0;
 	user-select: none;
 }
 
@@ -41,20 +41,20 @@ h1 {
 #message {
 	display: inline-block;
 	width: 20%;
-	color: steelblue;
+	color: #4682b4;
 	user-select: none;
 }
 
 #stripe {
-	background-color: white;
+	background-color: #fff;
 	height: 30px;
 	text-align: center;
 	user-select: none;
 }
 
 .selected {
-	color: white;
-	background: steelblue;
+	color: #fff;
+	background: #4682b4;
 }
 
 button {
@@ -72,6 +72,6 @@ button {
 }
 
 button:hover {
-	color: white;
-	background: steelblue;
+	color: #fff;
+	background: #4682b4;
 }
