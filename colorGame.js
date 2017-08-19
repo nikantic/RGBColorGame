@@ -34,15 +34,15 @@ function setupSquares() {
 	for (var i = 0; i< squares.length; i++) {
 		// add click listeners to squares
 		squares[i].addEventListener("click", function(){
-			var clickedColor = this.style.background;
+			var clickedColor = this.style.backgroundColor;
 			if (clickedColor === pickedColor) {
 				messageDisplay.textContent = "Correct!";
 				messageDisplay.style.color = pickedColor;
 				resetButton.textContent = "Play Again?";
 				changeColors(clickedColor);
-				h1.style.background = clickedColor;
+				h1.style.backgroundColor = clickedColor;
 			} else {
-				this.style.background = "#232323";
+				this.style.backgroundColor = "#232323";
 				messageDisplay.textContent = "Try again";
 			}
 		});
@@ -58,12 +58,12 @@ function reset() {
 	for (var i = 0; i< squares.length; i++) {
 		if(colors[i]) {
 			squares[i].style.display = "block";
-			squares[i].style.background = colors[i];
+			squares[i].style.backgroundColor = colors[i];
 		} else {
 			squares[i].style.display = "none"; 	 
 		}
 	}
-	h1.style.background = "#4682b4";
+	h1.style.backgroundColor = "#4682b4";
 	messageDisplay.style.color = "#4682b4";	
 }
 
@@ -73,7 +73,7 @@ resetButton.addEventListener("click", function() {
 
 function changeColors(color) {
 	for (var i = 0; i < squares.length; i++) {
-		squares[i].style.background = color;
+		squares[i].style.backgroundColor = color;
 	};
 }
 
